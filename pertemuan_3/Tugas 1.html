@@ -1,0 +1,67 @@
+<p style="line-height: 1;">fieldset&legend</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<p style="line-height: 1;">datalist</p>
+
+<label for="hobi">Hobi:</label>
+<input type="text" id="hobi" name="hobi" list="daftar-hobi">
+<datalist id="daftar-hobi">
+    <option value="Bersepeda">
+    <option value="Membaca">
+    <option value="Memasak">
+</datalist>
+
+<p style="line-height: 1;">output</p>
+
+<form oninput="hasil.value = parseInt(angka1.value) + parseInt(angka2.value)">
+    <input type="number" id="angka1" name="angka1">
+    +
+    <input type="number" id="angka2" name="angka2">
+    =
+    <output name="hasil"></output>
+</form>
+
+<p style="line-height: 1;">option</p>
+
+<select>
+    <option value="apple">Apel</option>
+    <option value="banana">Pisang</option>
+    <option value="cherry">Ceri</option>
+</select>
+
+<p style="line-height: 1.5;">optgroup</p>
+
+<select>
+    <optgroup label="Buah">
+        <option value="apple">Apel</option>
+        <option value="banana">Pisang</option>
+        <option value="cherry">Ceri</option>
+    </optgroup>
+    <optgroup label="Sayuran">
+        <option value="carrot">Wortel</option>
+        <option value="broccoli">Brokoli</option>
+        <option value="spinach">Bayam</option>
+    </optgroup>
+</select>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://keystoneacademic-res.cloudinary.com/image/upload/element/11/116333_116328_photoUGM.jpeg');
+            /**/
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .form-container img {
+            width: 100px;
+            margin-bottom: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: calc(100% - 10px);
+            padding: 2px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="head">
+                <img src="https://pbs.twimg.com/profile_images/1062039595582349312/qPC3exfw_400x400.jpg" alt="Logo">
+                <h2>Pendaftaran Anggota Baru Komunitas Gamabunta</h2>
+            </div>
+            <br>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim" required>
+                </div>
+                <div class="form-group">
+                    <label for="fakultas">Asal Fakultas:</label>
+                    <input type="text" id="fakultas" name="fakultas" required>
+                </div>
+                <div class="form-group">
+                    <label for="angkatan">Angkatan Berapa:</label>
+                    <select id="angkatan" name="angkatan">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="wa">Nomor WA:</label>
+                    <input type="text" id="wa" name="wa" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
