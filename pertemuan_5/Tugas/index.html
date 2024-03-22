@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #edf2f8;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+    }
+
+    .image-section {
+      display: flex;
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    img {
+      width: 150%;
+      border-radius: 10px;
+    }
+
+    .text-section {
+      padding: 10px;
+      background-color: white;
+      position: relative;
+      text-align: left;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #495466;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #5F6366;
+      font-size: 14px;
+    }
+
+    .author-image {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-left: 10px;
+      float: left;
+    }
+
+    .author {
+      color: #495466;
+      font-size: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    .date {
+      color: #5F6366;
+      font-size: 10px;
+      display: block;
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+
+    .social-icons {
+      margin-top: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icons a {
+      margin-left: 5px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .share img {
+      width: 17px;
+      height: 17px;
+      margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 300px;
+        box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .text-section {
+        padding: 20px;
+      }
+
+      .social-icons {
+        margin-left: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .social-icons a {
+        margin-left: 10px;
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="./images/drawers.jpg" alt="Furniture Image">
+    </div>
+    <div class="text-section">
+      <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+      <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+        I’ve got some simple tips to help you make any room feel complete.</p>
+      <div class="author-section">
+        <img src="./images/avatar-michelle.jpg" class="author-image">
+        <span class="author">Michelle Appleton</span>
+        <span class="date">28 Jun, 2020</span>
+      </div>
+      <div class="social-icons">
+        <div class="share">
+          <a href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/220px-2021_Facebook_icon.svg.png"
+              alt="Facebook"></a>
+          <a href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png"
+              alt="Twitter"></a>
+          <a href="#"><img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/pinterest_logo_icon_147250.png"
+              alt="Pinterest"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
