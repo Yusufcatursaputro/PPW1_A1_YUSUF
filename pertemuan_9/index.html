@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Manga List</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://th.bing.com/th/id/OIG2.pYnX_.z_L4tkM2uQOt1H?pid=ImgGn">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+
+    .manga-list-container {
+      background: linear-gradient(180deg, #000 74%, #e27c0e 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 400;
+      padding: 17px 28px 36px;
+    }
+
+    @media (max-width: 768px) {
+      .manga-list-container {
+        padding: 0 20px;
+      }
+    }
+
+    .header {
+      align-self: stretch;
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+    
+    .site-title {
+      text-shadow: 0px 1.985px 1.985px rgba(0, 0, 0, 0.25);
+      -webkit-text-stroke-width: 0.4962405860424042;
+      -webkit-text-stroke-color: #000;
+      background: linear-gradient(180deg, #fff 0%, #e27c0e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-color: rgba(0, 0, 0, 1);
+      border-style: solid;
+      border-width: 0px;
+      flex-grow: 1;
+      flex-basis: auto;
+      font: 69px Irish Grover, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .site-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    }
+
+    .search-input {
+      border-radius: 100px;
+      background-color: #fffbfb;
+      align-self: start;
+      margin-top: 13px;
+      align-items: start;
+      color: #000;
+      white-space: nowrap;
+      padding: 14px 17px;
+      font: 32px Istok Web, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .search-input {
+        padding-right: 20px;
+        white-space: initial;
+        margin: auto;
+      }
+    }
+
+    .manga-title {
+      color: #fff;
+      margin-top: 183px;
+      font: 184px Montserrat, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .manga-title {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 100px;
+      }
+    }
+
+    .manga-cover {
+      aspect-ratio: 0.63;
+      object-fit: auto;
+      object-position: center;
+      width: 409px;
+      margin-top: 87px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .manga-cover {
+        margin-top: 40px;
+      }
+    }
+
+    .manga-details {
+      color: #fff;
+      margin-top: 127px;
+      font: 36px Inter, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .manga-details {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+
+    .footer {
+      color: #fff;
+      text-align: center;
+      text-decoration-line: underline;
+      margin-top: 319px;
+      font: 20px Montserrat, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="manga-list-container">
+    <header class="header">
+      <h1 class="site-title">My Manga List</h1>
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search manga">
+    </header>
+
+    <h2 class="manga-title">One Piece</h2>
+
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/5951d99f4b146f9b3599c4c97dda7ee102b71b962e4843d66dba08e15be47422?apiKey=8ab842b9caaa49e0a253f65906108624&"
+      alt="One Piece manga cover" class="manga-cover">
+
+    <section class="manga-details">
+      Author : Eiichiro Oda<br>
+      Genres : Action, Adventure, Fantasy<br>
+      Type : Manga Status : Publishing Sinopsis :<br>
+      Gol D. Roger, seorang pria yang disebut sebagai &quot;Raja Bajak Laut&quot;, akan dieksekusi oleh Pemerintah
+      Dunia. Namun sebelum kematiannya, dia mengkonfirmasi keberadaan harta karun, One Piece, yang terletak di suatu
+      tempat di lautan luas yang dikenal sebagai Grand Line. Mengumumkan bahwa One Piece dapat diklaim oleh siapa pun
+      yang cukup layak untuk mencapainya, Raja Bajak Laut dieksekusi dan Zaman Bajak Laut Hebat dimulai.<br><br>
+      Dua puluh dua tahun kemudian, seorang pemuda bernama Monkey D. Luffy siap memulai petualangannya sendiri, mencari
+      One Piece dan berusaha menjadi Raja Bajak Laut yang baru. Hanya berbekal topi jerami, perahu kecil, dan tubuh
+      elastis, ia memulai perjalanan fantastis untuk mengumpulkan krunya sendiri dan kapal yang layak yang akan membawa
+      mereka melintasi Grand Line untuk mengklaim status terhebat di laut lepas.
+    </section>
+
+    <footer class="footer">
+      MyMangaList ©2024 All Rights Reserved.<br>
+      This site is protected by reCAPTCHA and the Google
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+      and
+      <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+      apply.
+    </footer>
+  </main>
+</body>
+
+</html>
