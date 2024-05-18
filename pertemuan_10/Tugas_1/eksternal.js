@@ -1,0 +1,3 @@
+function eksternal() {
+    alert("eksternal")
+}
