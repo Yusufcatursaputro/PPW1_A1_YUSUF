@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikan PPW1</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="question"></div>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var questionDiv = document.getElementById('question');
+      var resultDiv = document.getElementById('result');
+
+      var isPraktikan = confirm('Apakah Anda praktikan PPW1?');
+      
+      if (isPraktikan) {
+        var name = prompt('Masukkan Nama Anda:');
+        var nim = prompt('Masukkan NIM Anda:');
+        var angkatan = prompt('Masukkan Angkatan Anda:');
+        
+        resultDiv.innerHTML = `
+          <h3>Data Praktikan</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Angkatan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>${name}</td>
+                <td>${nim}</td>
+                <td>${angkatan}</td>
+              </tr>
+            </tbody>
+          </table>
+        `;
+      } else {
+        resultDiv.innerHTML = `<div class="alert alert-danger" role="alert">Anda bukan praktikan PPW1, anda tidak boleh masuk!</div>`;
+      }
+    });
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
